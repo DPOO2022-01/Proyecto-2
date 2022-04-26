@@ -48,35 +48,6 @@ public class Tryme {
 	        add( txtEjemplo2 );
 		    //elemento6
 	        
-	        // PANEL SHOW ACTIVIDADES
-		    
-	        JPanel panelShowActividades= new JPanel();
-		    add(panelShowActividades,BorderLayout.SOUTH);
-		    
-		    panelShowActividades.setLayout(new GridLayout(5,4));
-		    panelShowActividades.setBorder( new TitledBorder( "Actividades Disponibles" ));
-		    //elemento de tabla 1
-		    JTextField txtEjemplo111= new JTextField( " Nombre " );
-	        txtEjemplo111.setEditable( true );
-	        panelShowActividades.add( txtEjemplo111 );
-			//elemento de tabla 2
-	        JTextField txtEjemplo112= new JTextField( " Tipo " );
-	        txtEjemplo112.setEditable( true );
-	        panelShowActividades.add( txtEjemplo112 );
-			//elemento de tabla 3
-	        JTextField txtEjemplo113= new JTextField( " Descripción " );
-	        txtEjemplo113.setEditable( true );
-	        add( txtEjemplo113 );
-			//elemento de tabla 4
-	        JTextField txtEjemplo114= new JTextField( " Participante Asignado " );
-	        txtEjemplo114.setEditable( true );
-	        add( txtEjemplo114 );
-		    //elemento de tabla 5
-	        JTextField txtEjemplo115= new JTextField( " null " );
-	        txtEjemplo115.setEditable( true );
-	        add( txtEjemplo115 );
-		    
-		    
 		}
 	}
 	*/
