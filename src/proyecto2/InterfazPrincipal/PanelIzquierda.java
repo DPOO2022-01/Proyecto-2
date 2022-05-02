@@ -15,8 +15,8 @@ import javax.swing.border.TitledBorder;
 public class PanelIzquierda extends JPanel implements ActionListener
 {
    
-    
-    private JTextField txtEjemplo;
+    private JButton btnAñadirPart, btnSelecCsv;
+    private JTextField txtEjemplo,txtEjemplo1,txtEjemplo2;
     
     
     public PanelIzquierda()
@@ -61,11 +61,12 @@ public class PanelIzquierda extends JPanel implements ActionListener
         JLabel lbl2 = new JLabel("Menú participantes");
         add (lbl2);
     	//elemento5
-        JButton btnAñadirPart= new JButton( "Añadir participante" );
+        btnAñadirPart= new JButton( "Añadir participante" );
         add( btnAñadirPart );
     	//elemento6
-        JButton btnElimiPart= new JButton( "Eliminar participante" );
-        add( btnElimiPart );
+        txtEjemplo1= new JTextField();
+        txtEjemplo1.setEditable( true );
+        add( txtEjemplo1 );
     	//elemento7
         JLabel lbl3 = new JLabel("");
         add (lbl3);
@@ -73,11 +74,12 @@ public class PanelIzquierda extends JPanel implements ActionListener
         JLabel lbl4 = new JLabel("Actividades: ");
         add (lbl4);
     	//elemento9
-        JButton btnSelecCsv = new JButton("Cargar CSV con las actividades");
+        btnSelecCsv = new JButton("Cargar CSV con las actividades");
         add(btnSelecCsv);
     	//elemento10
-        JLabel lbl5 =new JLabel("");
-        add(lbl5);
+        txtEjemplo2= new JTextField();
+        txtEjemplo2.setEditable( true );
+        add( txtEjemplo2 );
         
     }
 
@@ -85,7 +87,17 @@ public class PanelIzquierda extends JPanel implements ActionListener
     @Override
     public void actionPerformed( ActionEvent e )
     {
-        txtEjemplo.setText( "hola me llamo Germán" );
+        String informationTxt="";
+    	if (e.getSource()==btnAñadirPart) {
+    		informationTxt=txtEjemplo1.getText();
+    		//crear participante
+    		
+        }
+    	
+        else if(e.getSource()==btnSelecCsv) {
+        	informationTxt=txtEjemplo2.getText();
+        }
+    	txtEjemplo.setText( "hola me llamo Germán" );
     }
     
 }
