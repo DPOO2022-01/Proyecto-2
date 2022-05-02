@@ -15,7 +15,7 @@ public class VentanaProyecto2 extends JFrame
 	
 	public VentanaProyecto2()
 	{
-		setSize( 700, 700 );//700,500
+		setSize( 700, 500 );//700,500
         setDefaultCloseOperation( EXIT_ON_CLOSE );
         setLocationRelativeTo( null );
         setTitle( "Administrador de proyectos " );

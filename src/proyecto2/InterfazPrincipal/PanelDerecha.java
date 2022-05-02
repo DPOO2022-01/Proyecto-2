@@ -84,8 +84,8 @@ public class PanelDerecha extends JPanel implements ActionListener
     	//elemento10
 	    JButton btn1= new JButton("Crear Registro");
 	    panelRegistro.add(btn1);
+	    btn1.addActionListener(this); //behaviour
 	    
-
     	//                                                     PANEL REGISTROS
 	    panelRegistros.setLayout(new GridLayout(3,1));
 	    //elemento1
@@ -102,7 +102,9 @@ public class PanelDerecha extends JPanel implements ActionListener
     @Override
     public void actionPerformed( ActionEvent e )
     {
-        txtEjemplo.setText( "hola me llamo Germán" );
+    	//behaviour
+        System.out.println("ALOOO");
+    	txtEjemplo.setText( "hola me llamo Germán" );
     }
     
 }
